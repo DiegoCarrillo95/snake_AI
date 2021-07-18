@@ -5,7 +5,7 @@ from collections import namedtuple
 import numpy as np
 
 BLOCK_SIZE = 20
-SPEED = 10
+SPEED = 100
 
 #rgb colors
 COLOR_WHITE = (255,255,255)
@@ -26,12 +26,6 @@ class Direction(Enum):
     UP = 3
     DOWN = 4
 
-#reset
-#reward
-#play(action) -> direction
-#game_iteration
-#is_collision
-    
 class SnakeGameAI:
 
     def __init__(self, w = 640, h = 480):
